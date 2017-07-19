@@ -2,15 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Reproductor</title>
+	<title>HTML5 Audio Player</title>
+	<!-- Favicon -->
+	<link rel="icon"
+      type="image/ico"
+      href="assets/img/favicon.ico">
+    <!-- FontAwesome -->
+	<script src="https://use.fontawesome.com/b432f04897.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<h1>Reproductor de audio</h1>
-	<audio controls="">
-		<source src="audio/04-emerald-hill-zone.mp3" type="audio/mpeg">
-	</audio>
-	<p>Album name: <b>Sonic the Hedgehog 2 Original Soundtrack</b><br>
-	Song name: <b>04 Emerald Hill Zone.mp3</b></p>
+	<header>
+		<h1>Music Player</h1>
+		<h2>DINOSAURS FOR HIRE (1993)</h2>
+	</header>
+	<section class="flex-container">
+		<div class="audio">
+			<div class="cover">
+				<img src="assets/img/Dinosaurs_for_Hire_Title.png" alt="cover">
+			</div>
+			<audio id="audio" tabindex="0" autoplay controls type="audio/mpeg">
+				<source src="assets/audio/08-title-theme.mp3" type="audio/mp3">
+				Sorry, your browser doesn't support HTML5 :(
+			</audio>
+			<ul id="playlist">
+				<li class="active"><a href="assets/audio/08-title-theme.mp3">Title Theme</a></li>
+				<li><a href="assets/audio/01-big-boss-theme.mp3">Big Boss Theme</a></li>
+				<li><a href="assets/audio/02-deep-in-darkness.mp3">Deep in Darkness</a></li>
+				<li><a href="assets/audio/03-endless-fall.mp3">Endless Fall</a></li>
+				<li><a href="assets/audio/04-town-to-underground.mp3">Town to Underground</a></li>
+				<li><a href="assets/audio/05-factory.mp3">Factory</a></li>
+				<li><a href="assets/audio/06-rumble.mp3">Rumble</a></li>
+				<li><a href="assets/audio/07-lights-and-cams.mp3">Lights and Cams</a></li>
+				<li><a href="assets/audio/09-interlude-1.mp3">Interlude 1</a></li>
+				<li><a href="assets/audio/10-interlude-2.mp3">Interlude 2</a></li>
+				<li><a href="assets/audio/11-interlude-3.mp3">Interlude 3</a></li>
+				<li><a href="assets/audio/DinosaursForHire_1993.rar"></a></li>
+			</ul>
+		</div>
+		<div class="img">
+			<img src="assets/img/dinosaurs.jpg" alt="Dinosaurs">
+		</div>
+	</section>
+	<footer>
+		<p><small>Music by Paul 'Moto' Gadbois, Dave 'Chick-a-Baugh' Delia</small></p>
+		<p><small>Images by <a href="https://www.segaretro.org/images/archive/9/93/20100930183759%21DFA_MD_US_Box.jpg">SegaRetro</a></small></p>
+		<p class="developer"><small>Developed by <b>Paula Ponce Zúñiga</b></small></p>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- JS -->
 	<script type="text/javascript" src="assets/js/javascript.js"></script>
 </body>
 </html>
